@@ -27,7 +27,7 @@ jacoco {
                     username System.getenv()['nexusUser']
                     password System.getenv()['nexusPassword']
                 }
-                url http://139.59.75.64:8081/nexus/repository/Gradle_repo/
+                url "http://139.59.75.64:8081/nexus/repository/Gradle_repo/"
             }
         }
     }
