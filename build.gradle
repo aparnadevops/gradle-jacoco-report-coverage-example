@@ -41,8 +41,8 @@ apply plugin: 'maven-publish'
                     "build/libs/gradle-pipeline.jar"
                 }
                 groupId "aparna.test.gradle"
-                artifactId "aparna"
-               // version "0.0.1"
+                artifactId "gradle-pipeline"
+                version "0.0.1"
             }
         }
       } 
