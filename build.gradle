@@ -20,7 +20,18 @@ group = 'com.github.jitpack'
 jacoco {
         toolVersion = "0.8.5"
 }
-
+ publishing {
+        repositories {
+            maven {
+                credentials {
+                    username System.getenv()['nexusUser']
+                    password System.getenv()['nexusPassword']
+                }
+                url http://139.59.75.64:8081/nexus/repository/Gradle_repo/
+            }
+        }
+    }
+}
 
 sourceCompatibility = 1.8 // java 8
 targetCompatibility = 1.8
