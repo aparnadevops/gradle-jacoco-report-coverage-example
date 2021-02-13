@@ -20,18 +20,7 @@ group = 'com.github.jitpack'
 jacoco {
         toolVersion = "0.8.5"
 }
-publishing {
-        publications {
-            publishMFAgentCorePackageZip(MavenPublication) {
-                artifact {
-                    "build/libs/gradle-pipeline.jar"
-                }
-                groupId "aparna.test.gradle"
-                artifactId "aparna"
-                version "0.0.1"
-            }
-        }
-      } 
+
 allprojects {
 apply plugin: 'maven-publish'
  publishing {
@@ -45,6 +34,18 @@ apply plugin: 'maven-publish'
             }
         }
     }
+    publishing {
+        publications {
+            publishMFAgentCorePackageZip(MavenPublication) {
+                artifact {
+                    "build/libs/gradle-pipeline.jar"
+                }
+                groupId "aparna.test.gradle"
+                artifactId "aparna"
+                version "0.0.1"
+            }
+        }
+      } 
 }
 
 sourceCompatibility = 1.8 // java 8
