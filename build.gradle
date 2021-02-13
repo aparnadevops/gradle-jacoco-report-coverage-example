@@ -24,7 +24,7 @@ publishing {
         publications {
             publishMFAgentCorePackageZip(MavenPublication) {
                 artifact {
-                    "artifact(build/libs/gradle-pipeline.jar)"
+                    "build/libs/gradle-pipeline.jar"
                 }
                 groupId "aparna.test.gradle"
                 artifactId "aparna"
