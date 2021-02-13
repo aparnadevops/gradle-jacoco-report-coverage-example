@@ -20,6 +20,8 @@ group = 'com.github.jitpack'
 jacoco {
         toolVersion = "0.8.5"
 }
+allprojects {
+apply plugin: 'maven-publish'
  publishing {
         repositories {
             maven {
@@ -31,7 +33,7 @@ jacoco {
             }
         }
     }
-
+}
 
 sourceCompatibility = 1.8 // java 8
 targetCompatibility = 1.8
