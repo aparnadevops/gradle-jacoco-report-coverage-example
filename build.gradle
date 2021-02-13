@@ -20,6 +20,17 @@ group = 'com.github.jitpack'
 jacoco {
         toolVersion = "0.8.5"
 }
+publishing {
+        publications {
+            publishMFAgentCorePackageZip(MavenPublication) {
+                artifact {
+                    "artifact(“build/libs/gradle-pipeline.jar)"
+                }
+                groupId "aparna.test.gradle"
+                artifactId "aparna"
+                version 0.0.1
+            }
+        }
 allprojects {
 apply plugin: 'maven-publish'
  publishing {
