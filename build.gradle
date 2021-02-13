@@ -3,7 +3,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.palantir:jacoco-coverage:0.2.1'
+        classpath 'com.palantir:jacoco-coverage:0.7.5'
 
     }
 }
