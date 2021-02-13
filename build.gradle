@@ -42,7 +42,7 @@ apply plugin: 'maven-publish'
                 }
                 groupId "aparna.test.gradle"
                 artifactId "gradle-pipeline"
-                version "0.0.1"
+               // version "0.0.1"
             }
         }
       } 
